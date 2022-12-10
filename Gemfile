@@ -44,6 +44,11 @@ group :development do
   gem 'spring'
 end
 
+group :development, :test do
+  gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
+  gem "pry-rails"
+end
+
 group :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 3.26'
